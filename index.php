@@ -40,4 +40,15 @@
 
   $user = new UserDao();
   var_dump($user->getPseudoUser('david'));
+
+
+  require(dirname(__FILE__).'/observer-client.php');
+  require(dirname(__FILE__).'/observer-server.php');
+
+  $usersRepository = new UsersRepository();
+  $message = new Message();
+  $usersRepository->attach($message);
+
+  $user = new User('David', 'david@simplon.co');
+  $usersRepository->createUser($user);
 ?>

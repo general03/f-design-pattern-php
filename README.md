@@ -53,3 +53,18 @@ On donne une instance à une autre classe pour manipuler les données
 ## Sujet
 
 Effectuer une liste de tâche
+
+# Exo 5 : Observeur
+
+## Explication
+
+Basé sur SplSubject et SplObserver de PHP
+Permet de faire transiter une information lorsqu'un état change
+
+## Sujet
+
+Faire un mécanisme de notification de message
+
+# Exo 6 : Command
+
+TODO
