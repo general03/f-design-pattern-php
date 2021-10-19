@@ -1,0 +1,10 @@
+version: '2'
+services:
+  dp-db:
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    container_name: dp-db
+    ports:
+      - 3306:3306
+    env_file:
+      - .env

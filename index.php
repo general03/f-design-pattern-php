@@ -38,6 +38,6 @@
 
   require(dirname(__FILE__).'/dao.php');
 
-  $user = new userDao();
+  $user = new UserDao();
   var_dump($user->getPseudoUser('david'));
 ?>

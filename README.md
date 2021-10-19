@@ -3,7 +3,7 @@
 Installation de l'environnement de dev
 ```
 docker build -t php7 .
-docker run -it --rm --name singleton-php -v $(pwd):/usr/src/app php7 php index.php
+docker run -it --rm --name singleton-php --network host --env-file=.env -v $(pwd):/usr/src/app php7 php index.php
 ```
 
 Exécuter son code
@@ -24,7 +24,12 @@ Veuillez mettre en place un singleton pour vous connecter en BDD
 ## Explication
 
 Est une abstraction de la persistence des données, proche de la BDD. Il est souvent couplé avec PDO
-On va retrouver dans cette classe la manière de manipuler nos données (CRUD)
+On va retrouver dans cette classe la manière de manipuler nos données (CRUD).
+VS Repository : lui est plus proche de la logique métier, il manipule les DAO
+
+## Sujet
+
+Créer un DAO User pour obtenir l'existence d'un pseudo  
 
 # Exo 3 : Factory
 
