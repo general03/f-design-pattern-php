@@ -98,6 +98,14 @@ Réaliser un décorateur qui modifie l'affichage des logs en fonction de la verb
 
 # Exo 9 : Builder
 
+## Explication
+
+Permet de découper la construction d'un objet en partie moins complexe
+
+## Sujet
+
+Construire une maison (toit, porte, fenetre ...) selon ce principe
+
 # Exo 10 : Adapter
 
 # Exo 11 : State

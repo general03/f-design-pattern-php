@@ -79,4 +79,8 @@
   $py = new DecoratorLanguage($lang);
   echo $py->display('python');
 
+
+  require(dirname(__FILE__).'/builder.php');
+  $schoolBuilder = new SchoolBuilder();
+  $school = (new Director())->build($schoolBuilder);
 ?>
