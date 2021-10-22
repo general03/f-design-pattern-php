@@ -36,19 +36,29 @@
   var_dump($todo->getContent());
 
 
-  require(dirname(__FILE__).'/dao.php');
+  // require(dirname(__FILE__).'/dao.php');
 
-  $user = new UserDao();
-  var_dump($user->getPseudoUser('david'));
+  // $user = new UserDao();
+  // var_dump($user->getPseudoUser('david'));
 
 
-  require(dirname(__FILE__).'/observer-client.php');
-  require(dirname(__FILE__).'/observer-server.php');
+  // require(dirname(__FILE__).'/observer-client.php');
+  // require(dirname(__FILE__).'/observer-server.php');
 
-  $usersRepository = new UsersRepository();
-  $message = new Message();
-  $usersRepository->attach($message);
+  // $usersRepository = new UsersRepository();
+  // $message = new Message();
+  // $usersRepository->attach($message);
 
-  $user = new User('David', 'david@simplon.co');
-  $usersRepository->createUser($user);
+  // $user = new User('David', 'david@simplon.co');
+  // $usersRepository->createUser($user);
+
+
+  require(dirname(__FILE__).'/command.php');
+
+  $log = new Log("Erreur dans votre application !", "WARNING");
+  $invoker = new CommandInvoker(new EchoCommand($log));
+  $output = $invoker->handle();
+  $invoker = new CommandInvoker(new FileCommand($log));
+  $output = $invoker->handle();
+
 ?>

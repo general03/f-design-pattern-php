@@ -67,4 +67,20 @@ Faire un mécanisme de notification de message
 
 # Exo 6 : Command
 
-TODO
+## Explication
+
+Permet de séparer le code à l'origine de l'action et l'action elle même 
+
+## Sujet
+
+Créer un gestionnaire d'information en utilisant une commande à minima Log et File
+
+# Exo 7 : Strategy
+
+# Exo 8 : Decorateur
+
+# Exo 9 : Builder
+
+# Exo 10 : Adapter
+
+# Exo 11 : State
