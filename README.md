@@ -73,9 +73,18 @@ Permet de séparer le code à l'origine de l'action et l'action elle même
 
 ## Sujet
 
-Créer un gestionnaire d'information en utilisant une commande à minima Log et File
+Créer un gestionnaire d'information en utilisant une commande à minima Echo et File
 
 # Exo 7 : Strategy
+
+## Explication
+
+On manipule un seul composant pour des comportements (stratégies) différents.
+C'est le contexte qui s'occupe de faire le lien entre la classe créée et le fonctionnement demandé
+
+## Sujet
+
+Créer un gestionnaire d'information en utilisant une stratégie à minima Echo et File
 
 # Exo 8 : Decorateur
 

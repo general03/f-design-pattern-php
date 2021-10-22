@@ -61,4 +61,13 @@
   $invoker = new CommandInvoker(new FileCommand($log));
   $output = $invoker->handle();
 
+
+  require(dirname(__FILE__).'/strategy.php');
+
+  $context = new Context(new EchoStrategy());
+  $context->launchStrategy('Message to echo !');
+
+  $context = new Context(new FileStrategy());
+  $context->launchStrategy('Message to file !');
+  
 ?>
