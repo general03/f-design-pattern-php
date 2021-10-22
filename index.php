@@ -69,5 +69,14 @@
 
   $context = new Context(new FileStrategy());
   $context->launchStrategy('Message to file !');
-  
+
+
+
+  require(dirname(__FILE__).'/decorator.php');
+  $lang = new MyLanguage();
+  echo $lang->display('React');
+
+  $py = new DecoratorLanguage($lang);
+  echo $py->display('python');
+
 ?>

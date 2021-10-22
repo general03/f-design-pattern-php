@@ -88,6 +88,14 @@ Créer un gestionnaire d'information en utilisant une stratégie à minima Echo 
 
 # Exo 8 : Decorateur
 
+## Explication
+
+Permet d'ajouter des comportement sur des objets
+
+## Sujet
+
+Réaliser un décorateur qui modifie l'affichage des logs en fonction de la verbosité souhaité
+
 # Exo 9 : Builder
 
 # Exo 10 : Adapter
