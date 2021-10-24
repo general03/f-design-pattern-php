@@ -108,4 +108,8 @@ Construire une maison (toit, porte, fenetre ...) selon ce principe
 
 # Exo 10 : Adapter
 
+## Explication
+
+Fait office d'interface entre 2 objets ne pouvant pas communiquer entre eux
+
 # Exo 11 : State

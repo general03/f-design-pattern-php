@@ -83,4 +83,11 @@
   require(dirname(__FILE__).'/builder.php');
   $schoolBuilder = new SchoolBuilder();
   $school = (new Director())->build($schoolBuilder);
+
+
+
+  require(dirname(__FILE__).'/adapter.php');
+  $monopoly = new Monopoly('Hasbro', 1935);
+  $adapter = new GameAdapter($monopoly);
+  echo $adapter->getInfo();
 ?>
