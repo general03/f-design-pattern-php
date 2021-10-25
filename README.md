@@ -1,3 +1,28 @@
+# Définition des Design Pattern
+
+Les Design Pattern (patron de conception) sont des architectures logicielles permettant de répondre à des problématiques.
+Il existe 3 types de Design Pattern
+- création
+- structuration
+- comportement
+
+<img src="img/3_types_dp.png" />
+
+C'est une bonne pratique de se reposer sur ces modèles, cela apportera également
+- Un découpage plus fonctionnel de votre application
+- Un code plus clair (mais éclaté dans plusieurs modèles) 
+- Un programme plus générique qui gèrera mieux les différents cas d'usage (couche d'abstraction)
+
+# MVC
+
+C'est également une architecture logicielle qui permet de découper le code en plusieurs parties.
+Il en existe plusieurs type :
+- MVC
+- MVT (dérivé de MVC)
+- MVVM (.Net)
+
+<img src="img/mvc.png" />
+
 # Pré-requis
 
 Installation de l'environnement de dev
@@ -112,4 +137,15 @@ Construire une maison (toit, porte, fenetre ...) selon ce principe
 
 Fait office d'interface entre 2 objets ne pouvant pas communiquer entre eux
 
+## Sujet 
+
+Constuire un adapter pour afficher la liste des jeux disponibles dans une plateforme de vente en ligne
+
 # Exo 11 : State
+
+## Explication 
+
+Modifit le comportement d'un objet en fonction d'une situation 
+
+## Sujet
+
