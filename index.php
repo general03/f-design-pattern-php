@@ -90,4 +90,16 @@
   $monopoly = new Monopoly('Hasbro', 1935);
   $adapter = new GameAdapter($monopoly);
   echo $adapter->getInfo();
+
+
+  require(dirname(__FILE__).'/state.php');
+  $inventory = new Shop();
+  $inventory->setState(new InventoryIn());
+  echo "Stock entrant \r\n";
+  echo $inventory->move(6);
+  $inventory->setState(new InventoryOut());
+  echo "\r\nStock sortant \r\n";
+  echo $inventory->move(-3);
+  echo $inventory->move(-1);
+
 ?>
