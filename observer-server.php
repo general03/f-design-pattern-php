@@ -1,10 +1,10 @@
 <?php
 
-class Message implements \SplObserver
+class Message implements SplObserver
 {
-    public function update(\SplSubject $subject)
+    public function update(SplSubject $subject)
     {
-        echo "Message !";
+        echo "Un nouvelle utilisateur est arrivé !\r\n";
     }
 }
 

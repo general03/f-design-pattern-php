@@ -6,8 +6,8 @@ abstract class BaseDao{
 
     public function __construct(){
         try{        
-            $this->_connection = new \PDO("mysql:dbname=".getenv('MYSQL_DATABASE').";host=0.0.0.0",getenv('MYSQL_USER'),getenv('MYSQL_PASSWORD'));
-            $this->_connection->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
+            $this->_connection = new PDO("mysql:dbname=".getenv('MYSQL_DATABASE').";host=0.0.0.0",getenv('MYSQL_USER'),getenv('MYSQL_PASSWORD'));
+            $this->_connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         } catch(PDOException $e) {
             die('ERROR : '.$e->getMessage());
         }   

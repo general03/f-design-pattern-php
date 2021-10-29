@@ -9,18 +9,25 @@ class TodoFactory {
 
 }
 
-class Card {
+abstract class Info {
+    
+    private $_text;
+    
+    public function getInfo(){
+        return $this->_text;
+    }    
+}
 
-    private $text;
+class Card extends Info {
 
     public function __construct($text)
     {
-        $this->text = $text;
+        $this->_text = $text;
     }
 
     public function getText()
     {
-        return $this->text;
+        return "Card : " . $this->_text;
     }
 }
 

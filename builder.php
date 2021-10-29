@@ -44,13 +44,13 @@ class SchoolBuilder implements Builder
     {
         $this->_house->add('enter', new Door());
         $this->_house->add('garden', new Door());
-        echo "2 doors added !";
+        echo "2 doors added !\r\n";
     }
 
     public function addRoof()
     {
         $this->_house->add('main', new Roof());
-        echo "1 roof added !";
+        echo "1 roof added ! \r\n";
     }
 
     public function createHouse()

@@ -8,13 +8,13 @@ class User
 
 class UsersRepository implements SplSubject
 {
-    private \SplObjectStorage $observers;
+    private SplObjectStorage $observers;
     
     private array $users = [];    
 
     public function __construct()
     {
-        $this->observers = new \SplObjectStorage;
+        $this->observers = new SplObjectStorage;
     }  
     
     public function createUser(User $user)
@@ -23,12 +23,12 @@ class UsersRepository implements SplSubject
         $this->notify();
     }    
     
-    public function attach(\SplObserver $observer)
+    public function attach(SplObserver $observer)
     {
         $this->observers->attach($observer);
     }    
     
-    public function detach(\SplObserver $observer)
+    public function detach(SplObserver $observer)
     {
         $this->observers->detach($observer);
     }    

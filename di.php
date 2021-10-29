@@ -2,16 +2,16 @@
 
 class Todo {
 
-    private $card;
+    private $_card;
 
     public function __construct($card) { 
 
-        $this->card = $card;
+        $this->_card = $card;
  
     }
 
     public function getContent(){
-        return $this->card->name .", " . $this->card->priority;
+        return $this->_card->name .", " . $this->_card->priority;
     }
 
 
