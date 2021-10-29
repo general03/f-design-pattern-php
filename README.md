@@ -201,13 +201,13 @@ Modifit le comportement d'un objet en fonction d'une situation
 
 Gérer un stock entrant et sortant d'un magasin
 
-# Synfony
+# Symfony
 
 Regardez dans ce framework, et donc dans un de vos projets, les Design Pattern les plus utilisés :
 
 - Injection de dépendance
 
-<img src="img/design-pattern-injection-dependance.png.png" />
+<img src="img/design-pattern-injection-dependance.png" />
 
 - Builder
 
